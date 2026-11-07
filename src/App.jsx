@@ -1,109 +1,128 @@
+import {Card,CardItem,CardApps,CardRow} from './components/Component.jsx'
 import './App.css'
-import img from './assets/img.png'
-import img2 from './assets/Img (1).png'
-import icon1 from './assets/icon.png'
-import icon2 from './assets/icon (1).png'
-import icon3 from './assets/icon (2).png'
-import avatar from './assets/Avatar.png'
+import phone from './assets/col-md-6 (1).png'
+import vector from './assets/Vector (5).png'
+import apple from './assets/Vector (6).png'
+import vector7 from './assets/Vector (7).png'
+import vector8 from './assets/Vector (8).png'
+import vector9 from './assets/Vector (9).png'
+import userAvatar from './assets/circle-box.png'
+import map from './assets/pngwing 1.png'
+import media from './assets/media.png'
 
 const App = () => (
   <>
     <div className='header'>
-      <div><span style={{ fontSize: 'xx-large', fontWeight: '800' }}>beauty</span><span style={{ color: '#69B99D', fontSize: 'xx-large', fontWeight: '800' }}>salon</span><span style={{ fontSize: 'xx-large', fontWeight: '600' }}>.</span></div>
-      <div className='sessoes'>
-        <p>Início</p>
-        <p>Sobre</p>
-        <p>Serviços</p>
-        <p>Depoimentos</p>
-        <p>Contato</p>
+      <h1 style={{ color: 'white' }}>BrandName</h1>
+      <div className='headerPar'>
+        <p>Home</p>
+        <p>Product</p>
+        <p>Pricing</p>
+        <p>Contact</p>
       </div>
+
+      <h4 style={{color:'white'}}>Login</h4>
+      <button style={{ backgroundColor: '#23A6F0', padding: '15px', color: 'white', border: 'none', borderRadius: '5px' }}>Become a member →</button>
     </div>
-
-    <div className='container'>
-
+    
+    <div className='container1'>
       <div className='textBox'>
-        <h1>Saúde natural para os seus cabelos</h1>
-        <p>Um salão exclusivo em São Paulo, especializado em tratamentos naturais.</p>
-        <button style={{ padding: '10px', borderRadius: '5px', backgroundColor: '#69B99D', color: 'white', border: 'none' }}>Agendar um  horário</button>
+        <h1 style={{color:'white'}}>Financial Assistance With True Purpose</h1>
+        <p style={{color:'white'}}>We know how large objects will act, but things on a small scale.</p>
+        <div style={{display:'flex',gap:'10px'}}><button style={{backgroundColor:'#23A6F0',color:'white',border:'none',borderRadius:'20px',padding:'10px'}}>Get Quote Now</button><button style={{backgroundColor:'transparent',border:'1px solid white',color:'white',borderRadius:'20px',padding:'10px'}}>Get Quote Now</button></div>
       </div>
-
-      <div style={{ width: '30%' }}>
-        <div style={{ width: '500px' }}><img width={'100%'} src={img} alt="" /></div>
-      </div>
-    </div>
-
-    <div className='Sobrenós'>
-      <div style={{ width: '500px' }}><img width={'100%'} src={img2} alt="" /></div>
-      <div className='textBox2'>
-        <h1>Sobre nós</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis arcu quis nisi luctus, id accumsan felis tristique. Proin quis bibendum diam. Sed consequat nisl laoreet eros ultricies pellentesque. Nullam in est porta, pellentesque massa vitae, vehicula risus. </p>
-        <p>In placerat, felis vitae sodales dictum, lacus quam pretium mi, ut pretium urna turpis eu dui. Vestibulum id ullamcorper nibh. Donec luctus, nunc finibus elementum suscipit, tortor augue vulputate sapien, vitae feugiat enim augue sed. </p>
-        <p>Quisque id aliquam elit. Suspendisse congue pharetra maximus. Duis rutrum velit a leo euismod dictum. Sed sodales est efficitur arcu tincidunt tincidunt. Curabitur fringilla, risus at feugiat feugiat, nisl nulla tincidunt tellus, elementum elementum lorem nisl eleifend dolor. Nullam eget dui at sem ullamcorper luctus.</p>
+      <div>
+        <img src={phone} alt="" />
       </div>
     </div>
 
-    <div className='Serviços'>
-      <div className='textBox3'>
-        <h1>Serviços</h1>
-        <p>Com mais de 10 anos no mercado, o Beautysalon já conquistou clientes de inúmeros países com seus tratamentos exclusivos e totalmente naturais</p>
+    
+      <div className="textBox2">
+        <h1>Better Strategy With Quality Business</h1>
+        <p style={{color:'grey'}}>Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics </p>
       </div>
 
       <div className='cards'>
-        <div className='card1'>
-          <img src={icon1} alt="" />
-          <h2>Terapia capilar</h2>
-          <p>Terapia completa para couro cabeludo e fios, protegendo todos os tipos de cabelos, inclusive os longos e finos.</p>
-        </div>
-        <div className='card1'>
-          <img src={icon2} alt="" />
-          <h2>Terapia capilar</h2>
-          <p>Terapia completa para couro cabeludo e fios, protegendo todos os tipos de cabelos, inclusive os longos e finos.</p>
-        </div>
-        <div className='card1'>
-          <img src={icon3} alt="" />
-          <h2>Terapia capilar</h2>
-          <p>Terapia completa para couro cabeludo e fios, protegendo todos os tipos de cabelos, inclusive os longos e finos.</p>
-        </div>
+        <div className='card'><img src={vector} alt="" /><Card title={'Investment Trading'} description={'the quick fox jumps over the lazy dog'}></Card></div>
+        <div className='card'><img src={vector} alt="" /><Card title={'Investment Trading'} description={'the quick fox jumps over the lazy dog'}></Card></div>
+        <div className='card'><img src={vector} alt="" /><Card title={'Investment Trading'} description={'the quick fox jumps over the lazy dog'}></Card></div>
+        <div className='card'><img src={vector} alt="" /><Card title={'Investment Trading'} description={'the quick fox jumps over the lazy dog'}></Card></div>
+        <div className='card'><img src={vector} alt="" /><Card title={'Investment Trading'} description={'the quick fox jumps over the lazy dog'}></Card></div>
+        <div className='card'><img src={vector} alt="" /><Card title={'Investment Trading'} description={'the quick fox jumps over the lazy dog'}></Card></div>
       </div>
-      <div className='title'>
-        <div className='textBox4'>
-          <h1>Depoimentos de quem já passou por aqui</h1>
-        </div>
-        <div className='box1'>
-          <div className='textCard1'>
-            <p>Eu sou cliente do Beautysalon há 5 anos e não troco por nada! Certamente meu cabelo mudou muito depois que comecei a tratar somente com produtos naturais e veganos. São profissionais incríveis e qualificados.</p>
-            <img src={avatar} alt="" />
-          </div>
-          <div className='textCard1'>
-            <p>Eu sou cliente do Beautysalon há 5 anos e não troco por nada! Certamente meu cabelo mudou muito depois que comecei a tratar somente com produtos naturais e veganos. São profissionais incríveis e qualificados.</p>
-            <img src={avatar} alt="" />
-          </div>
-        </div>
 
+      <div className="textBox2">
+        <h1>What Clients Say</h1>
+        <p style={{color:'grey'}}>Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics </p>
       </div>
+
+      <div className='cards2'>
+        <div className='userCard'><CardItem img={userAvatar} description={'Slate helps you see how many more days you need to work to reach your financial goal for the month and year.'} name={'Regina Miles'} profession={'Designer'}></CardItem></div>
+      </div>
+
+      <div className="textBox2">
+        <h1>Download Our App</h1>
+        <p style={{color:'grey'}}>Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics </p>
+      </div>
+      
+      <div className='appsCards'>
+        <div className='appCard'><CardApps img = {apple} download={'Download on'} name={'App Store'}></CardApps></div>
+        <div className='appCard'><CardApps img = {vector7} download={'Download on'} name={'Google Play'}></CardApps></div>
+        <div className='appCard'><CardApps img = {vector8} download={'Download on'} name={'Amazon.com'}></CardApps></div>
+        <div className='appCard'><CardApps img = {vector9} download={'Download on'} name={'Windows Store'}></CardApps></div>
+      </div>
+
+      <div className="textBox2">
+        <h1>Pricing</h1>
+        <p style={{color:'white'}}>Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics </p>
+      </div>
+
+      <div className='cardsRow'>
+        <div className='cardRow'><CardRow title={'FREE'} description={'Most calendars are designed for teams. Slate is designed for freelancers who want a simple way '} price={'0 $'} button={'Try for free'}></CardRow></div>
+        <div className='cardRow'><CardRow title={'STANDARD'} description={'Most calendars are designed for teams. Slate is designed for freelancers who want a simple way '} price={'19 $'} button={'Try for free'}></CardRow></div>
+      </div>
+
       <div className='container2'>
-        <div className='textBox_1'>
-          <h1>Entre em contato com a gente!</h1>
-          <p style={{color:'grey'}}>Entre em contato com a Beautysalon, queremos tirar suas dúvidas, ouvir suas críticas e sugestões.</p>
-          <button style={{ padding: '10px', borderRadius: '5px', backgroundColor: '#69B99D', color: 'white', border: 'none' }}>Entrar em contato</button>
+        <div className='textBoxMap'>
+          <h1>We Have Branches All Over The World</h1>
+          <p>The gradual accumulation of information about atomic and small-scale behaviour during the first quarter of the 20th century, which gave some indications about how small things do behave, produced an increasing confusion which was Heisenberg, and Born.</p>
         </div>
-        <div className='textBox_2'>
-          <p>11 99845-6754</p>
-          <p>R. Amauri Souza, 346</p>
-          <p>contato@beautysalon.com</p>
+        <div>
+          <img src={map} alt="" />
         </div>
       </div>
-    </div>
 
-    <div className='footer'>
-      <div>
-        <span style={{ fontSize: 'xx-large', fontWeight: '800' }}>beauty</span><span style={{ color: '#69B99D', fontSize: 'xx-large', fontWeight: '800' }}>salon</span><span style={{ fontSize: 'xx-large', fontWeight: '600' }}>.</span>
-        <p>©2021 Beautysalon.</p>
-        <p>Todos os direitos reservados.</p>
+      <div className='container3'>
+        <div>
+          <img src={media} alt="" />
+        </div>
+        
+        <div className='form'>
+          <form>
+            <caption>Book Appointment</caption>
+            <br />
+            <label htmlFor="inpName">Name *</label>
+            <input id='inpName' type="text" placeholder='Full Name * '/>
+            <br />
+            <label htmlFor="inpName">Email address *</label>
+            <input id='inpName' type="text" placeholder='example@gmail.com  '/>
+            <br />
+            <label htmlFor="inpName">Departement *</label>
+            <select>
+              <option value="">Please Select</option>
+            </select>
+            <br />
+            <label htmlFor="inpName">Time *</label>
+            <select>
+              <option value="">4:00 Available</option>
+            </select>
+            <br />
+            <button  style={{ backgroundColor: '#23A6F0', padding: '15px', color: 'white', border: 'none', borderRadius: '5px' }}>Book Appointment</button>
+          </form>
+        </div>
       </div>
-    </div>
   </>
-
 )
+
 
 export default App
